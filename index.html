@@ -56,7 +56,13 @@ nav a {
   line-height: 1.2;
   letter-spacing: -0.02em;  /* ← 詰める */
 }
+@media (max-width: 768px) {
+  .title {
+    line-height: 1.05;   /* ← スマホ時だけ詰める */
+  }
+}
 
+  
 .title2 {
   font-size: 1.05rem;
   font-weight: 600;
