@@ -40,10 +40,9 @@ html, body {
 
 .img-row {
   display: flex;
-  justify-content: center; /* 画像を中央寄せ */
-  gap: 16px;               /* 画像間のスペース */
-  flex-wrap: wrap;          /* スマホなど狭い画面では縦並びに */
-  margin-bottom: 8px;       /* キャプションとの間隔 */
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: nowrap; /* wrap → nowrap に変更 */
 }
 
 .img-row img {
