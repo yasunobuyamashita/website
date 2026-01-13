@@ -32,6 +32,32 @@ html, body {
   padding: 20px 16px 64px;
 }
 
+/* ===== 画像2枚横並び＋下にまとめてキャプション ===== */
+.img-row-wrapper {
+  text-align: center; /* キャプションを中央に */
+  margin-bottom: 32px;
+}
+
+.img-row {
+  display: flex;
+  justify-content: center; /* 画像を中央寄せ */
+  gap: 16px;               /* 画像間のスペース */
+  flex-wrap: wrap;          /* スマホなど狭い画面では縦並びに */
+  margin-bottom: 8px;       /* キャプションとの間隔 */
+}
+
+.img-row img {
+  max-width: 48%; /* 2枚並びの幅 */
+  height: auto;
+  display: block;
+}
+
+.img-row-wrapper .img-bottom {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 4px;
+}
+  
 /* ===== ナビ ===== */
 nav ul {
   list-style: none;
@@ -249,6 +275,13 @@ KIKK IPAの歴代ラベルデザインを担当してもらっているヤマシ
 <br><br>
 <span class="name">YY:</span> 実は、ビールとは別に、KIKK IPAのロゴをモチーフにしたTシャツ※2のデザインを考えていたんです。そのTシャツの絵柄を使って、ラベルに展開できないか、という発想が最初でした。なので、先にTシャツのデザインがありました。最終的には、そのTシャツをもとにシンプルにロゴを使った案と，まだやっていなかったポップなコラージュ案の2案を提出して、RISE & WINさんの意見も聞いてみよう、という流れになりました。
 <br><br>
+<div class="img-row-wrapper">
+  <div class="img-row">
+    <img src="img/2_KIKK_DIPA_type1.png" alt="コラージュ案a">
+    <img src="img/3_KIKK_DIPA_type2.png" alt="コラージュ案b">
+  </div>
+  <div class="img-bottom">コラージュ案</div>
+</div>
 <span class="name">KI:</span> そうでしたね。これまでのカクカクしたロゴやデザインは、ファンの方にも十分浸透しただろう、という感覚があって。今回は少し丸みのある、可愛くて親しみやすい方向性もテーマだった気がします。最終的に、色数が多くて賑やかなポップな案と，Tシャツをもとにしたシンプルな案。この2つが残りましたよね。僕は本当に両方好きで、正直決められなくて（笑）、RISE & WINさんに意見を聞いた形でした。
 <br><br>
 <span class="name">YY:</span> 結果的に、2022がInternational Beer Cupで銀賞（インペリアルIPA部門）を受賞して，シンプルなラベルの方を選んでくれて良かったなと思いました。
