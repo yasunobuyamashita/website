@@ -6,30 +6,48 @@
 <title>KIKK IPA</title>
 
 <style>
+/* ===== 基本設定（ゴシック体） ===== */
 html, body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #ffffff;
   color: #111;
-  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", "YuGothic", sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Noto Sans JP",
+    "Yu Gothic",
+    "YuGothic",
+    sans-serif;
   line-height: 1.5;
   font-size: 16px;
 }
 
+/* ===== レイアウト ===== */
 .container {
   max-width: 720px;
   margin: 0 auto;
   padding: 20px 16px 64px;
 }
 
+/* ===== ナビ ===== */
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0 0 24px;
 }
-nav li { margin-bottom: 8px; }
-nav a { text-decoration: none; color: #000; font-weight: 600; }
+nav li {
+  margin-bottom: 8px;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
 
+/* ===== 見出し ===== */
 .title {
   font-size: 2.4rem;
   font-weight: 900;
@@ -55,23 +73,38 @@ nav a { text-decoration: none; color: #000; font-weight: 600; }
   border-top: 2px solid #ddd;
   border-left: 4px solid #999;
   padding-left: 12px;
-  font-family: "Hiragino Maru Gothic ProN","ヒラギノ丸ゴ ProN","Hiragino Sans","Yu Gothic","游ゴシック",sans-serif;
+  font-family: "Hiragino Maru Gothic ProN",
+               "ヒラギノ丸ゴ ProN",
+               "Hiragino Sans",
+               "Yu Gothic",
+               "游ゴシック",
+               sans-serif;
   color: #222;
 }
 
-.text { font-size: 1rem; }
+/* ===== 本文 ===== */
+.text {
+  font-size: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
 
-.name { font-weight: 700; }
+.name {
+  font-weight: 700;
+}
 
+/* ===== 画像 ===== */
 .img-bottom-wrapper {
   text-align: center;
   margin-bottom: 32px;
 }
+
 .img-bottom-wrapper img {
   display: inline-block;
   max-width: 100%;
   height: auto;
 }
+
 .img-bottom-wrapper .img-bottom {
   display: block;
   font-size: 0.8rem;
@@ -79,6 +112,7 @@ nav a { text-decoration: none; color: #000; font-weight: 600; }
   margin-top: 8px;
 }
 
+/* ===== フッター ===== */
 footer {
   text-align: center;
   font-size: 0.8rem;
@@ -86,14 +120,38 @@ footer {
   margin-top: 64px;
 }
 
-.top-area { margin-bottom: 32px; }
-.top-logo { width: 40%; height: auto; margin-bottom: 6px; }
-.top-bottles { width: 100%; height: auto; display: block; }
+/* ===== トップエリア ===== */
+.top-area {
+  margin-bottom: 32px;
+}
 
+.top-logo {
+  width: 40%;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.top-bottles {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== レスポンシブ（スマホ調整） ===== */
 @media (max-width: 768px) {
-  .title { font-size: 2.1rem; line-height: 1.1; }
-  .title2 { font-size: 1rem; }
-  .title3 { font-size: 1.1rem; margin: 48px 0 20px; padding-left: 10px; border-left-width: 3px; }
+  .title {
+    font-size: 2.1rem;
+    line-height: 1.1;
+  }
+  .title2 {
+    font-size: 1rem;
+  }
+  .title3 {
+    font-size: 1.1rem;
+    margin: 48px 0 20px;
+    padding-left: 10px;
+    border-left-width: 3px;
+  }
 }
 </style>
 </head>
@@ -101,6 +159,7 @@ footer {
 
 <div class="container">
 
+<!-- ===== ナビ ===== -->
 <nav id="g_navi">
   <ul>
     <li><a href="https://www.kamikatz.jp" target="_blank">RISE & WIN Brewing Co.</a></li>
@@ -109,28 +168,37 @@ footer {
   </ul>
 </nav>
 
+<!-- ===== トップエリア ===== -->
 <div class="top-area">
   <img src="img/KIKK_logo.png" alt="KIKK IPA ロゴ" class="top-logo">
   <img src="img/Top_Bottles.png" alt="KIKK IPA トップ画像" class="top-bottles">
 </div>
 
+<!-- ===== 記事タイトル ===== -->
 <div class="title">~KIKK IPA 歴代ラベルデザインを巡って~</div>
 <div class="title2">ケンイシイ X ヤマシタヤスノブ(デザイナー)</div>
 
+<!-- ===== イントロダクション ===== -->
 <div class="title3">イントロダクション</div>
 <div class="text">
-<span class="name">ケンイシイ(KI):</span> KIKK IPAの歴代ラベルデザインを担当してもらっているヤマシタさんに、お話を聞いてみようと思います。最初にこの話を僕の方からさせてもらった時、率直にどう思いましたか?<br><br>
+<span class="name">ケンイシイ(KI):</span>
+KIKK IPAの歴代ラベルデザインを担当してもらっているヤマシタさんに、お話を聞いてみようと思います。最初にこの話を僕の方からさせてもらった時、率直にどう思いましたか?<br><br>
 
-<span class="name">ヤマシタヤスノブ(YY):</span> 僕は主にCDジャケットや音楽関係のデザインをやってきたんですが、お菓子や飲食物のパッケージには以前から強い関心があって「いつか自分でもパッケージデザインをやってみたい」と思っていたところにこの話をいただいたので、「ぜひやらせてください!」と即答したのを覚えています。<br><br>
+<span class="name">ヤマシタヤスノブ(YY):</span>
+僕は主にCDジャケットや音楽関係のデザインをやってきたんですが、お菓子や飲食物のパッケージには以前から強い関心があって「いつか自分でもパッケージデザインをやってみたい」と思っていたところにこの話をいただいたので、「ぜひやらせてください!」と即答したのを覚えています。<br><br>
 
-<span class="name">KI:</span> 僕自身も、ビールを自分で作るのは初めてでした。RISE & WIN Brewing Co.さんには最初に、「ビールだけでなく、商品のアートワークまで含めてやらせてほしい」とお願いしていたんです。自分はかなりのハードドリンカーなので(笑)、これまで本当にたくさんのビールラベルを見てきました。だからこそ「自分にしかできないもの」「他とは違うもの」を、デザインとしてもやりたかった。オリジナルのアイデアを持っていて、一番信頼しているヤマシタさんと一緒にできたのは、本当に良かったです。
+<span class="name">KI:</span>
+僕自身も、ビールを自分で作るのは初めてでした。RISE & WIN Brewing Co.さんには最初に、「ビールだけでなく、商品のアートワークまで含めてやらせてほしい」とお願いしていたんです。自分はかなりのハードドリンカーなので(笑)、これまで本当にたくさんのビールラベルを見てきました。だからこそ「自分にしかできないもの」「他とは違うもの」を、デザインとしてもやりたかった。オリジナルのアイデアを持っていて、一番信頼しているヤマシタさんと一緒にできたのは、本当に良かったです。
 </div>
 
+<!-- ===== 章1 ===== -->
 <div class="title3">1. KIKK IPA 2019(ウエストコーストIPA)の誕生</div>
 <div class="text">
-<span class="name">KI:</span> 最初にKIKK IPA 2019を作るとき、どんなことを感じていましたか? 何か印象に残っているエピソードはありますか?<br><br>
+<span class="name">KI:</span>
+最初にKIKK IPA 2019を作るとき、どんなことを感じていましたか?何か印象に残っているエピソードはありますか?<br><br>
 
-<span class="name">YY:</span> 最初は、ケンさんは「ビールの広告塔」的な立ち位置なのかな、と思っていたんです。でも話を聞いてみたら、ビールそのものから一緒に作るということで、これは本気だなと。ますます気合が入りました(笑)。<br><br>
+<span class="name">YY:</span>
+最初は、ケンさんは「ビールの広告塔」的な立ち位置なのかな、と思っていたんです。でも話を聞いてみたら、ビールそのものから一緒に作るということで、これは本気だなと。ますます気合が入りました(笑)。<br><br>
 
 確か品川の「マーちゃん※1」で打ち合わせをしていた時、その場でいくつかラフを描いたんですよね。その中で、穴が開いているだけのシンプルなラベルが「それいいね!」となり、そこからどういう形状で穴を開けるか、の話になりました。<br><br>
 
@@ -143,25 +211,28 @@ footer {
 </div>
 
 <div class="text">
-<span class="name">KI:</span> 最終的にラベルは、黄土色のようで、でもそれとも違う絶妙な色になりましたよね。穴から覗く瓶のこげ茶との対比もすごく美しくて。いろいろなビールを見てきた中でも、あの色は見たことがなかったし、しかも一番好きなスタイルのウエストコーストIPAだったので、本当に良かったなと思っています。今でも2019年の最初のボトルは、ちょっと特別に好きです。ロゴも、穴の印象を活かしたカクカクした形で、いかにもヤマシタさんらしい。今でもあのロゴを使い続けています。
-<br><br>
+<span class="name">KI:</span>
+最終的にラベルは、黄土色のようで、でもそれとも違う絶妙な色になりましたよね。穴から覗く瓶のこげ茶との対比もすごく美しくて。いろいろなビールを見てきた中でも、あの色は見たことがなかったし、しかも一番好きなスタイルのウエストコーストIPAだったので、本当に良かったなと思っています。今でも2019年の最初のボトルは、ちょっと特別に好きです。ロゴも、穴の印象を活かしたカクカクした形で、いかにもヤマシタさんらしい。今でもあのロゴを使い続けています。
 </div>
 
+<!-- ===== 章2 ===== -->
 <div class="title3">2. KIKK IPA 2020（ニューイングランドIPA）</div>
 <div class="text">
-<span class="name">KI:</span> ニューイングランドIPAは、とにかくホップの量が多いんです。ホップという植物のイメージから「緑」が頭にありましたが、何か考えはありましたか？<br><br>
-
-<span class="name">YY:</span> まず、2019が最初で最後のつもりだったので，また作れることになって嬉しかったです。一口に緑といっても本当にいろいろありますよね。2019の世界観を踏襲しつつ、微妙にズレた緑をいくつかピックアップして、そこから選んでもらった記憶があります。<br><br>
-
-<span class="name">KI:</span> 確かに。ヤマシタさんが出してくる色って、いわゆる「一般的な色」じゃないんですよね。「ここにしかない色」になったのが、すごく良かったと思います。<br><br>
+<span class="name">KI:</span> ニューイングランドIPAは、とにかくホップの量が多いんです。ホップという植物のイメージから「緑」が頭にありましたが、何か考えはありましたか？
+<br><br>
+<span class="name">YY:</span> まず、2019が最初で最後のつもりだったので，また作れることになって嬉しかったです。一口に緑といっても本当にいろいろありますよね。2019の世界観を踏襲しつつ、微妙にズレた緑をいくつかピックアップして、そこから選んでもらった記憶があります。
+<br><br>
+<span class="name">KI:</span> 確かに。ヤマシタさんが出してくる色って、いわゆる「一般的な色」じゃないんですよね。「ここにしかない色」になったのが、すごく良かったと思います。
 </div>
+<div class="img-bottom-wrapper"></div> <!-- 空で幅を揃える -->
 
-<div class="title3">3. KIKK IPA 2021（セッションIPA）</div>
+<!-- ===== 章3 ===== -->
+<div class="title3">KIKK IPA 2021（セッションIPA）</div>
 <div class="text">
 <span class="name">KI:</span> 2021は、いわゆるセッションIPAで、少し軽めのビールでした。飲みやすさや軽さをテーマにして、「黄色がいいかな」と。これは比較的スムーズに決まりましたよね。<br><br>
-
 <span class="name">YY:</span> そうですね。2019と2020を並べて見ながら、次に来る色を自然に決めていった感じでした。
 </div>
+<div class="img-bottom-wrapper"></div> <!-- 空で幅を揃える -->
 
 <footer>
 © KIKK IPA
